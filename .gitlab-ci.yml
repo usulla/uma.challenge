@@ -1,0 +1,11 @@
+deploy_production:
+  only:
+    - tags
+  except:
+    - branches
+  tags:
+      - uma.tech
+  script:
+      - mkdir -p /data/www/releases/uma.tech.$CI_COMMIT_REF_SLUG/
+      - cp -R ./* /data/www/releases/uma.tech.$CI_COMMIT_REF_SLUG/
+      - rm -f /data/www/current; ln -sf /data/www/releases/uma.tech.$CI_COMMIT_REF_SLUG /data/www/current
