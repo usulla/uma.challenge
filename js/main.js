@@ -9,15 +9,31 @@ $(function () {
     var catWidth = $(".content_center__block").width();
 });
 
-var formURL =
-  "https://docs.google.com/forms/d/15Ts8au3uporAAOmcPJAcHTpK91t2kIAjej0djfHfxE4/formResponse?";
+var formURL = "/";
+var formElement = document.querySelector(".form");
+var formData = new FormData(formElement);
+const sendBtn = document.querySelector('.buttonsend');
 
-sendBtn.onclick = function() {
-  var data = {
-    "entry.779126364": document.getElementById("entry.779126364").value,
-    "entry.1039583708": document.getElementById("entry.1039583708").value
-  };
-  $("#form").hide();
-  postToGoogle(formURL, data);
-  // loadSheet.click();
+sendBtn.onclick = function () {
+    sendDataForm(formURL, formData);
 };
+
+function sendDataForm(url, data) {
+    console.log(99)
+    fetch(url, {
+        method: 'post',
+        body: data
+    })
+        .then(function (response) {
+            if (response.status !== 200) {
+                console.log(
+                    'Looks like there was a problem. Status Code: ' +
+                    response.status
+                );
+                return;
+            }
+            return response.json()
+        }).then(function (data) {
+            console.log(JSON.stringify(data))
+        });
+}
