@@ -1,122 +1,202 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Uma.Challenge</title>
-    <link rel="apple-touch-icon" href="favicon192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="favicon16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="favicon32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon192x192.png" sizes="192x192">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Uma.Challenge</title>
+        <link
+            rel="apple-touch-icon"
+            href="favicon192x192.png"
+            sizes="192x192"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon16x16.png"
+            sizes="16x16"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon32x32.png"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon192x192.png"
+            sizes="192x192"
+        />
 
-    <meta property="og:title" content="Сайт Uma.Challenge" />
-    <meta property="og:description" content="Официальный сайт российской технологической компании Uma.Tech" />
-    <meta property="og:url" content="https://uma.tech" />
-    <meta property="og:type" content="website" />
-    <meta name="description" content="Российская технологическая компании Uma.Tech, основана в 2015 году." />
-    <meta name="keywords" content="it,hardware,highload,tech,bigdata" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css?v=1">
-    <script defer src="https://code.jquery.com/jquery-3.4.0.min.js"
-        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-    <script defer src="js/main.js?ver=1"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138496188-1"></script>
-    <script async src="js/analitics.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-</head>
+        <meta property="og:title" content="Сайт Uma.Challenge" />
+        <meta
+            property="og:description"
+            content="Официальный сайт российской технологической компании Uma.Tech"
+        />
+        <meta property="og:url" content="https://uma.tech" />
+        <meta property="og:type" content="website" />
+        <meta
+            name="description"
+            content="Российская технологическая компании Uma.Tech, основана в 2015 году."
+        />
+        <meta name="keywords" content="it,hardware,highload,tech,bigdata" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css?v=1" />
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/main.js?ver=1"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-138496188-1"
+        ></script>
+        <script async src="js/analitics.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    </head>
 
-<body>
-    <script>
-        function postToGoogle(googleURL, data) {
-  $.ajax({
-    url: googleURL,
-    data: data,
-    type: "POST",
-    dataType: "xml",
-    statusCode: {
-      0: function() {
-        //Success message
-      },
-      200: function() {
-        //Success Message
-      }
-    },
+    <body>
+        <script>
+            function postToGoogle(googleURL, data) {
+                $.ajax({
+                    url: googleURL,
+                    data: data,
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function() {
+                            //Success message
+                        },
+                        200: function() {
+                            //Success Message
+                        }
+                    },
 
-    error: function(){
-      // actually throws an error, but does send properly
-    },
-  });
-}
-    </script>
-    <div data-relative-input="true" id="scene">
-        <div class="bg1" data-depth="0.2"></div>
-        <div class="bg2" data-depth="0.3"></div>
-        <div class="bg3" data-depth="0.5"></div>
-    </div>
-    <div class="main rus">
-        <div class="content_center">
-            <div class="content_center__block">
-             <div class="content_left">
+                    error: function() {
+                        // actually throws an error, but does send properly
+                    }
+                });
+            }
+        </script>
+        <div data-relative-input="true" id="scene">
+            <div class="bg1" data-depth="0.2"></div>
+            <div class="bg2" data-depth="0.3"></div>
+            <div class="bg3" data-depth="0.5"></div>
+        </div>
+        <div class="main rus">
+            <div class="content_center">
+                <div class="content_center__block">
                     <div class="content_top">
-                            <div class="logo">
-                                <img class="logo_img logo_rus" src="images/logo_rus.png" alt="Логотип Uma.Tech" />
-                                <img class="logo_img logo_eng hide" src="images/logo_eng.png" alt="Uma.Tech logo" />
-                            </div>
-                            <div class="period">
-                                Сентябрь 2019
-                            </div>
+                        <div class="logo">
+                            <img
+                                class="logo_img logo_rus"
+                                src="images/logo_eng.png"
+                                alt="Uma.Tech logo"
+                            />
                         </div>
-                <h1>Uma.Challenge</h1>
-                <h2>Всероссийский студенческий online challenge</h2>
-                <div class="title3">
-                    Твой уникальный шанс попробовать себя в решении прикладных задач в индустрии онлайн видео
-                </div>
-                <div class="category_block">
-                    <div class="category_description">
-                        Выбери одно из направлений и продемонстрируй навыки
-                    </div>
-                    <div class="category">
-                      <div class="category__item item1"><span class="point"></span>Highload Dev</div>  
-                        <div class="category__item item2"> <span class="point"></span>Data Science</div>
-                        <div class="category__item item3"> <span class="point"></span>Machine Learning</div>
-                    </div>
-                </div>
-                <div class="content_center-bottom">
-                    Докажи, что ты лучший, выиграй грант и стажировку в главном офисе компании Uma.Tech в Москве
-                </div>
-            </div>
-                <div class="content_right__block">
-                        <div class="form_block">
-                            <div class="form-content">
-                            <div class="form-title">Оставь заявку</div>
-                            <div class="form-description">на участие уже сегодня и в конце лета мы оповестим тебя о старте Uma.Challenge 
-                            </div>
-                            </div>
-                            <form class="form" id="form">
-                                <input type="text" name="nameUma" value="" placeholder="Укажите свое имя*"/>
-                                <input type="text" name="nameUma" value=""/ placeholder="Укажите свой email*">
-                                <input class="buttonsend" type="button" value="Отправить"/>
-                            </form>
-                            <div class="form_bottom">
-                                * - данные поля являются обязательными для заполнения
-                            </div> 
+                        <div class="period">
+                            Сентябрь 2019
                         </div>
-                        <div class="content_bottom">
-                                <div class="footer">
-                                        <a class="uma_email" href="mailto:info@uma.tech"><i class="fa fa-envelope"
-                                                aria-hidden="true"></i>talents@uma.tech</a>
-                                        <div class="copyrite">© ООО “Ума.Тех” 2019</div>
+                    </div>
+                    <div class="content_center2">
+                        <div class="content_left">
+                            <h1>Uma.Challenge</h1>
+                            <h2>Всероссийский студенческий online challenge</h2>
+                            <div class="title3">
+                                Твой уникальный шанс попробовать себя в решении
+                                прикладных задач в индустрии онлайн видео
+                            </div>
+                            <div class="category_block">
+                                <div class="category_description">
+                                    Выбери одно из направлений и продемонстрируй
+                                    навыки
                                 </div>
+                                <div class="category">
+                                    <div class="category__item item1">
+                                        <span class="point"></span>
+                                        Highload Dev
+                                    </div>
+                                    <div class="category__item item2">
+                                        <span class="point"></span>
+                                        Data Science
+                                    </div>
+                                    <div class="category__item item3">
+                                        <span class="point"></span>
+                                        Machine Learning
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="content_right__block">
+                            <div class="form_block">
+                                <div class="form-content">
+                                    <div class="form-title">Оставь заявку</div>
+                                    <div class="form-description">
+                                        на участие уже сегодня и в конце лета мы
+                                        оповестим тебя о старте Uma.Challenge
+                                    </div>
+                                </div>
+                                <form class="form" id="form">
+                                    <input
+                                        type="text"
+                                        name="nameUma"
+                                        value=""
+                                        placeholder="Укажите свое имя*"
+                                    />
+                                    <input type="text" name="nameUma" value=""/
+                                    placeholder="Укажите свой email*">
+                                    <input
+                                        class="buttonsend"
+                                        type="button"
+                                        value="Отправить"
+                                    />
+                                </form>
+                                <div class="form_bottom">
+                                    * - данные поля являются обязательными для
+                                    заполнения
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_bottom">
+                        <div class="content_center-bottom">
+                            Докажи, что ты лучший, выиграй грант и стажировку в
+                            главном офисе компании Uma.Tech в Москве
+                        </div>
+                        <div class="footer">
+                            <a class="uma_email" href="mailto:info@uma.tech">
+                                <i
+                                    class="fa fa-envelope"
+                                    aria-hidden="true"
+                                ></i>
+                                talents@uma.tech
+                            </a>
+                            <div class="copyrite">© ООО “Ума.Тех” 2019</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         <noscript>
-            <div><img src="https://mc.yandex.ru/watch/53321878" style="position:absolute; left:-9999px;" alt="" /></div>
+            <div>
+                <img
+                    src="https://mc.yandex.ru/watch/53321878"
+                    style="position:absolute; left:-9999px;"
+                    alt=""
+                />
+            </div>
         </noscript>
-</body>
+    </body>
 </html>
