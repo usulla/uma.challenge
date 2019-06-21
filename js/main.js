@@ -4,11 +4,6 @@ var parallaxInstance = new Parallax(scene, {
     relativeInput: true
 });
 
-$(function () {
-    var catHeight = $(".category").height() + 10;
-    var catWidth = $(".content_center__block").width();
-});
-
 var formURL = "/";
 var formElement = document.querySelector(".form");
 var formData = new FormData(formElement);
