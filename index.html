@@ -29,6 +29,28 @@
 </head>
 
 <body>
+    <script>
+        function postToGoogle(googleURL, data) {
+  $.ajax({
+    url: googleURL,
+    data: data,
+    type: "POST",
+    dataType: "xml",
+    statusCode: {
+      0: function() {
+        //Success message
+      },
+      200: function() {
+        //Success Message
+      }
+    },
+
+    error: function(){
+      // actually throws an error, but does send properly
+    },
+  });
+}
+    </script>
     <div data-relative-input="true" id="scene">
         <div class="bg1" data-depth="0.2"></div>
         <div class="bg2" data-depth="0.3"></div>
@@ -37,20 +59,59 @@
     <div class="main rus">
         <div class="content_center">
             <div class="content_center__block">
-                <div class="logo">
-                    <img class="logo_img logo_rus" src="images/logo_rus.png" alt="Логотип Uma.Tech" />
-                    <img class="logo_img logo_eng hide" src="images/logo_eng.png" alt="Uma.Tech logo" />
+             <div class="content_left">
+                    <div class="content_top">
+                            <div class="logo">
+                                <img class="logo_img logo_rus" src="images/logo_rus.png" alt="Логотип Uma.Tech" />
+                                <img class="logo_img logo_eng hide" src="images/logo_eng.png" alt="Uma.Tech logo" />
+                            </div>
+                            <div class="period">
+                                Сентябрь 2019
+                            </div>
+                        </div>
+                <h1>Uma.Challenge</h1>
+                <h2>Всероссийский студенческий online challenge</h2>
+                <div class="title3">
+                    Твой уникальный шанс попробовать себя в решении прикладных задач в индустрии онлайн видео
                 </div>
-                <div class="category">
-                    <div class="category__item item1">ИТ</div>
-                    <div class="category__item item2">Разработка высоконагруженных<br> сервисов</div>
-                    <div class="category__item item3">Аналитика больших<br> данных</div>
+                <div class="category_block">
+                    <div class="category_description">
+                        Выбери одно из направлений и продемонстрируй навыки
+                    </div>
+                    <div class="category">
+                      <div class="category__item item1"><span class="point"></span>Highload Dev</div>  
+                        <div class="category__item item2"> <span class="point"></span>Data Science</div>
+                        <div class="category__item item3"> <span class="point"></span>Machine Learning</div>
+                    </div>
+                </div>
+                <div class="content_center-bottom">
+                    Докажи, что ты лучший, выиграй грант и стажировку в главном офисе компании Uma.Tech в Москве
                 </div>
             </div>
-            <div class="footer">
-                <a class="uma_email" href="mailto:info@uma.tech"><i class="fa fa-envelope"
-                        aria-hidden="true"></i>talents@uma.tech</a>
-                <div class="copyrite">© ООО “Ума.Тех” 2019</div>
+                <div class="content_right__block">
+                        <div class="form_block">
+                            <div class="form-content">
+                            <div class="form-title">Оставь заявку</div>
+                            <div class="form-description">на участие уже сегодня и в конце лета мы оповестим тебя о старте Uma.Challenge 
+                            </div>
+                            </div>
+                            <form class="form" id="form">
+                                <input type="text" name="nameUma" value="" placeholder="Укажите свое имя*"/>
+                                <input type="text" name="nameUma" value=""/ placeholder="Укажите свой email*">
+                                <input class="buttonsend" type="button" value="Отправить"/>
+                            </form>
+                            <div class="form_bottom">
+                                * - данные поля являются обязательными для заполнения
+                            </div> 
+                        </div>
+                        <div class="content_bottom">
+                                <div class="footer">
+                                        <a class="uma_email" href="mailto:info@uma.tech"><i class="fa fa-envelope"
+                                                aria-hidden="true"></i>talents@uma.tech</a>
+                                        <div class="copyrite">© ООО “Ума.Тех” 2019</div>
+                                </div>
+                        </div>
+                </div>
             </div>
         </div>
     </div>
